@@ -12,13 +12,13 @@
 #   指定工具:        bash install.sh --tool cursor
 #
 # 远程一键安装:
-#   curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash
-#   curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --skill scanpy
-#   curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --category 05
+#   curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash -s -- --skill scanpy
+#   curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash -s -- --category 05
 
 set -e
 
-REPO_URL="https://github.com/LeonChaoX/qinyan-academic-skills.git"
+REPO_URL="https://github.com/qinyan-ai/qinyan-academic-skills.git"
 TEMP_DIR=$(mktemp -d)
 trap "rm -rf $TEMP_DIR" EXIT
 
@@ -77,16 +77,16 @@ if [ "$MODE" = "help" ]; then
 
 远程一键安装示例:
   # 安装全部
-  curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash
+  curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash
 
   # 安装单个 Skill
-  curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --skill scanpy
+  curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash -s -- --skill scanpy
 
   # 安装某个分类
-  curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --category 05
+  curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash -s -- --category 05
 
   # 安装到 Cursor
-  curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --tool cursor
+  curl -fsSL https://raw.githubusercontent.com/qinyan-ai/qinyan-academic-skills/main/install.sh | bash -s -- --tool cursor
 HELP
     exit 0
 fi
