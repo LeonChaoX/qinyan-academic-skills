@@ -1,24 +1,115 @@
 # 沁言学术科研论文 Skills 库
 
-[![Skills](https://img.shields.io/badge/Skills-177-brightgreen.svg)](#skills-分类目录)
-[![Categories](https://img.shields.io/badge/分类-17-blue.svg)](#skills-分类目录)
+[![Skills](https://img.shields.io/badge/Skills-181-brightgreen.svg)](#skills-分类目录)
+[![Categories](https://img.shields.io/badge/分类-18-blue.svg)](#skills-分类目录)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Works with](https://img.shields.io/badge/Works_with-Claude_Code_|_Cursor_|_Codex_|_OpenClaw-blue.svg)](#快速开始)
+[![Works with](https://img.shields.io/badge/Works_with-Claude_Code_|_Cursor_|_Codex_|_OpenClaw-blue.svg)](#支持的工具)
 
-一个面向学术科研的综合性 Skills 集合库，专门收集整理各种学术研究相关的 Agent Skills。所有用户和 Agent 都可以访问并一键安装使用。
+面向学术科研的综合性 Skills 集合库，为 AI Agent 提供 181 个学术研究 Skills，覆盖论文检索、科学写作、生物信息、药物发现、临床医学、机器学习等 18 个领域。支持一键安装、搜索、检测更新。
 
-本库整合了来自以下优秀开源项目的 Skills：
+### 来源致谢
+
 - [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) — 170+ 科学研究 Skills
 - [luwill/research-skills](https://github.com/luwill/research-skills) — 学术论文 Slide、综述写作、研究计划 Skills
-- 自研的学术论文搜索 Skill (Academic Paper Search)
+- 沁言学术自研 Skills（论文搜索、论文分析、论文润色、引文搜索、主题分析）
+
+---
+
+## 快速开始
+
+### 一键安装（推荐）
+
+```bash
+# 安装全部 181 个 Skills（默认安装到 Claude Code）
+curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash
+```
+
+### 按需安装
+
+```bash
+# 安装某个分类（按编号）
+curl -fsSL .../install.sh | bash -s -- -c 01          # 论文检索与文献管理
+curl -fsSL .../install.sh | bash -s -- -c 05          # 生物信息与基因组学
+
+# 安装单个 Skill
+curl -fsSL .../install.sh | bash -s -- -s scanpy
+curl -fsSL .../install.sh | bash -s -- -s paper-slide-deck
+
+# 安装沁言学术 Skills
+curl -fsSL .../install.sh | bash -s -- -s qinyan-paper-search
+curl -fsSL .../install.sh | bash -s -- -s qinyan-paper-analysis
+```
+
+> 以上命令中 `.../install.sh` 为 `https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh` 的缩写。
+
+### 指定工具 & 作用域
+
+```bash
+# 安装到不同工具
+curl -fsSL .../install.sh | bash -s -- --tool cursor
+curl -fsSL .../install.sh | bash -s -- --tool codex
+curl -fsSL .../install.sh | bash -s -- --tool gemini
+curl -fsSL .../install.sh | bash -s -- --tool openclaw
+
+# 安装到当前项目（而非全局）
+curl -fsSL .../install.sh | bash -s -- --project
+curl -fsSL .../install.sh | bash -s -- --project -s scanpy
+```
+
+### 搜索与浏览
+
+```bash
+curl -fsSL .../install.sh | bash -s -- --list           # 列出所有分类
+curl -fsSL .../install.sh | bash -s -- --list-skills     # 列出全部 Skills
+curl -fsSL .../install.sh | bash -s -- --search 蛋白质   # 搜索 Skills
+curl -fsSL .../install.sh | bash -s -- --search drug
+```
+
+### 检测更新 & 版本管理
+
+```bash
+curl -fsSL .../install.sh | bash -s -- --check-update    # 检查是否有新版本
+curl -fsSL .../install.sh | bash -s -- --update           # 更新全部
+curl -fsSL .../install.sh | bash -s -- --update -s scanpy # 更新单个
+curl -fsSL .../install.sh | bash -s -- --update --force   # 强制更新（覆盖本地修改）
+curl -fsSL .../install.sh | bash -s -- --status           # 查看已安装状态
+curl -fsSL .../install.sh | bash -s -- --version          # 查看脚本版本
+```
+
+### Git Clone 安装
+
+```bash
+git clone https://github.com/LeonChaoX/qinyan-academic-skills.git
+cd qinyan-academic-skills
+bash install.sh                    # 安装全部
+bash install.sh -s scanpy          # 安装单个
+bash install.sh -c 05              # 安装分类
+bash install.sh --search 论文      # 搜索
+bash install.sh --check-update     # 检查更新
+bash install.sh --update            # 更新
+bash install.sh --help              # 查看帮助
+```
+
+---
+
+## 支持的工具
+
+| 工具 | `--tool` 参数 | 全局安装目录 | 项目级安装目录 |
+|------|:----------:|-------------|---------------|
+| Claude Code | `claude`（默认） | `~/.claude/skills/` | `.claude/skills/` |
+| Cursor | `cursor` | `~/.cursor/skills/` | `.cursor/skills/` |
+| Codex | `codex` | `~/.codex/skills/` | `.codex/skills/` |
+| Gemini CLI | `gemini` | `~/.gemini/skills/` | `.gemini/skills/` |
+| OpenClaw | `openclaw` | `~/.openclaw/skills/` | `.openclaw/skills/` |
 
 ---
 
 ## Skills 分类目录
 
 | 编号 | 分类 | 数量 | 说明 |
-|------|------|------|------|
-| 01 | [论文检索与文献管理](#01-论文检索与文献管理) | 11 | 论文搜索、文献检索、引用管理、文献数据库 |
+|:----:|------|:----:|------|
+| — | [沁言学术 Skills](#沁言学术-skills) | 5 | 沁言学术自研：论文搜索、论文分析、论文润色、引文搜索、主题分析 |
+| 01 | [论文检索与文献管理](#01-论文检索与文献管理) | 10 | 论文搜索、文献检索、引用管理、文献数据库 |
 | 02 | [科学写作与学术交流](#02-科学写作与学术交流) | 6 | 论文写作、同行评审、研究计划、综述撰写 |
 | 03 | [学术演示与可视化](#03-学术演示与可视化) | 9 | 学术海报、演示文稿、科学示意图、数据可视化 |
 | 04 | [研究方法与科学思维](#04-研究方法与科学思维) | 8 | 假设生成、科学头脑风暴、批判性思维、基金申请 |
@@ -36,168 +127,28 @@
 | 16 | [地理空间与遥感](#16-地理空间与遥感) | 2 | GIS 分析、卫星遥感、空间统计 |
 | 17 | [平台与基础设施](#17-平台与基础设施) | 4 | 云计算、资源管理、合规认证 |
 
-**总计：177 个 Skills**
-
----
-
-## 快速开始
-
-### 方式一：一键 Bash 命令安装（推荐，无需 clone）
-
-无需手动克隆仓库，一条命令即可远程安装：
-
-**安装全部 177 个 Skills：**
-```bash
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash
-```
-
-**安装某个分类（按编号）：**
-```bash
-# 安装 01-论文检索与文献管理（11个skills）
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --category 01
-
-# 安装 05-生物信息与基因组学（21个skills）
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- -c 05
-
-# 安装 09-机器学习与人工智能（14个skills）
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- -c 09
-```
-
-**安装单个 Skill：**
-```bash
-# 安装学术论文搜索
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --skill academic-paper-search
-
-# 安装单细胞分析 scanpy
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- -s scanpy
-
-# 安装论文自动生成PPT
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- -s paper-slide-deck
-
-# 安装研究计划撰写
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- -s research-proposal
-```
-
-**安装到其他工具（Cursor / Codex / Gemini CLI / OpenClaw）：**
-```bash
-# 安装全部到 Cursor
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --tool cursor
-
-# 安装生物信息分类到 Gemini CLI
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- -c 05 --tool gemini
-
-# 安装全部到 OpenClaw
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --tool openclaw
-
-# 安装单个 Skill 到 OpenClaw
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --tool openclaw -s scanpy
-```
-
-**安装到当前项目（而非全局）：**
-```bash
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --project
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --project -s scanpy
-```
-
-**搜索和浏览 Skills：**
-```bash
-# 列出所有分类
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --list
-
-# 列出全部 Skills
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --list-skills
-
-# 搜索含 "蛋白质" 的 Skills
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --search 蛋白质
-
-# 搜索含 "drug" 的 Skills
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --search drug
-```
-
-**检查更新与版本管理：**
-```bash
-# 检查已安装 Skills 是否有新版本
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --check-update
-
-# 更新全部已安装的 Skills
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --update
-
-# 更新单个 Skill
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --update -s scanpy
-
-# 更新某个分类
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --update -c 05
-
-# 强制更新（覆盖本地修改）
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --update --force
-
-# 查看已安装 Skills 的状态
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --status
-
-# 查看脚本版本
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --version
-```
-
-**查看帮助：**
-```bash
-curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/main/install.sh | bash -s -- --help
-```
-
----
-
-### 方式二：Git Clone 手动安装
-
-```bash
-git clone https://github.com/LeonChaoX/qinyan-academic-skills.git
-cd qinyan-academic-skills
-
-# 安装全部
-bash install.sh
-
-# 安装某个分类
-bash install.sh --category 01
-
-# 安装单个 skill
-bash install.sh --skill scanpy
-
-# 搜索
-bash install.sh --search 论文
-```
-
-### 方式三：直接复制目录
-
-```bash
-git clone https://github.com/LeonChaoX/qinyan-academic-skills.git
-
-# 复制全部
-cp -r qinyan-academic-skills/skills/*/* ~/.claude/skills/
-
-# 复制某个分类
-cp -r qinyan-academic-skills/skills/01-论文检索与文献管理/* ~/.claude/skills/
-
-# 复制单个 skill
-cp -r qinyan-academic-skills/skills/01-论文检索与文献管理/academic-paper-search ~/.claude/skills/
-```
-
-### 支持的工具
-
-| 工具 | 全局安装目录 | 项目级安装目录 |
-|------|-------------|---------------|
-| Claude Code | `~/.claude/skills/` | `.claude/skills/` |
-| Cursor | `~/.cursor/skills/` | `.cursor/skills/` |
-| Codex | `~/.codex/skills/` | `.codex/skills/` |
-| Gemini CLI | `~/.gemini/skills/` | `.gemini/skills/` |
-| OpenClaw | `~/.openclaw/skills/` | `.openclaw/skills/` |
+**总计：181 个 Skills，18 个分类**
 
 ---
 
 ## Skills 详细列表
 
+### 沁言学术 Skills
+
+沁言学术自研的 Skills，通过沁言学术 OpenAPI 提供论文搜索、分析、润色等能力。
+
+| Skill | 说明 |
+|-------|------|
+| qinyan-paper-search | 沁言学术论文搜索（Google Scholar/PubMed/ArXiv/万方） |
+| qinyan-paper-analysis | 沁言学术论文深度分析解读 |
+| qinyan-paper-polish | 沁言学术论文润色与改写 |
+| qinyan-citation | 沁言学术引文搜索 |
+| qinyan-topic-analysis | 沁言学术研究主题分析 |
+
 ### 01-论文检索与文献管理
 
 | Skill | 说明 |
 |-------|------|
-| academic-paper-search | 多源学术论文搜索（ArXiv/PubMed/Google Scholar/万方），支持智能Agent搜索和论文分析 |
 | bgpt-paper-search | 结构化全文论文搜索（方法、结果、样本量等25+字段） |
 | biorxiv-database | bioRxiv 预印本数据库 |
 | citation-management | 引用管理工具 |
@@ -457,24 +408,20 @@ cp -r qinyan-academic-skills/skills/01-论文检索与文献管理/academic-pape
 
 ---
 
-## 致谢
+## 技术文档
 
-本项目整合了以下优秀的开源项目，在此表示感谢：
-
-- **[K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)** — 由 K-Dense Inc. 维护的 170+ 科学研究 Skills 集合
-- **[luwill/research-skills](https://github.com/luwill/research-skills)** — 学术论文演示、综述写作和研究计划相关 Skills
+详见 [docs/technical-guide.md](docs/technical-guide.md)，包含搜索、检测更新、更新机制的完整技术原理。
 
 ---
 
 ## 贡献
 
-欢迎提交 Pull Request 来扩展和改进本 Skills 库！
+欢迎提交 Pull Request！
 
 1. Fork 本仓库
 2. 创建功能分支 (`git checkout -b feature/new-skill`)
-3. 将新 Skill 放入对应的分类目录下
-4. 确保包含完整的 `SKILL.md` 文件
-5. 提交 Pull Request
+3. 将新 Skill 放入对应的分类目录下，确保包含 `SKILL.md`
+4. 提交 Pull Request
 
 ---
 
@@ -482,4 +429,4 @@ cp -r qinyan-academic-skills/skills/01-论文检索与文献管理/academic-pape
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
 
-> 注意：每个 Skill 可能有自己的许可证，详见各 Skill 的 `SKILL.md` 文件中的 `license` 字段。
+> 每个 Skill 可能有自己的许可证，详见各 Skill 的 `SKILL.md` 中的 `license` 字段。
