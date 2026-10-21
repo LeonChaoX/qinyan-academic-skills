@@ -1,16 +1,16 @@
 # Qinyan Academic Skills — Nature 스타일 과학 논문 워크플로
 
-_학술 연구를 위한 187개의 설치형 AI Agent Skills와 Nature 스타일 과학 글쓰기, 논문 윤문, 투고 전 리뷰, 과학 그림 및 통계를 위한 자체 개발 스위트입니다._
+_학술 연구를 위한 188개의 설치형 AI Agent Skills와 Nature 스타일 과학 글쓰기, 논문 윤문, 투고 전 리뷰, 과학 그림 및 통계를 위한 자체 개발 스위트입니다._
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [繁體中文](./README.zh-TW.md) · [日本語](./README.ja-JP.md) · **한국어**
 
-[![Skills](https://img.shields.io/badge/skills-187-2ea44f.svg)](#-스킬-카탈로그)
+[![Skills](https://img.shields.io/badge/skills-188-2ea44f.svg)](#-스킬-카탈로그)
 [![Nature skills: 5 workflows](https://img.shields.io/badge/Nature%20skills-5%20workflows-1f6feb.svg)](./NATURE-SKILLS.md)
 [![Categories](https://img.shields.io/badge/categories-18-0969da.svg)](#-스킬-카탈로그)
 [![Agent support](https://img.shields.io/badge/agents-6-8250df.svg)](#-지원-에이전트)
 [![License: MIT](https://img.shields.io/badge/license-MIT-f5c518.svg)](./LICENSE)
 
-Qinyan Academic Skills는 Claude Code, Codex, Cursor, Gemini CLI, OpenClaw 및 OpenCode에 재사용 가능한 연구 역량을 제공합니다. 이 저장소에는 **18개 분야의 187개 Skills**가 있으며, 그중 5개는 Nature 스타일 과학 논문 작성, 학술 윤문, 투고 전 리뷰, 과학 시각화 및 통계 보고를 위한 통합 워크플로입니다.
+Qinyan Academic Skills는 Claude Code, Codex, Cursor, Gemini CLI, OpenClaw 및 OpenCode에 재사용 가능한 연구 역량을 제공합니다. 이 저장소에는 **18개 분야의 188개 Skills**가 있으며, 그중 5개는 Nature 스타일 과학 논문 작성, 학술 윤문, 투고 전 리뷰, 과학 시각화 및 통계 보고를 위한 통합 워크플로입니다.
 
 전체 모음을 설치하거나 현재 워크플로에 필요한 Skill, 카테고리, 대상 도구와 설치 범위만 선택할 수 있습니다.
 
@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/ma
 
 | 기능 | 제공 내용 |
 | --- | --- |
-| **폭넓은 연구 범위** | 문헌, 집필, 생명과학, AI, 통계, 데이터베이스 및 실험실 워크플로를 아우르는 187개 Skills |
+| **폭넓은 연구 범위** | 문헌, 집필, 생명과학, AI, 통계, 데이터베이스 및 실험실 워크플로를 아우르는 188개 Skills |
 | **에이전트 간 이식성** | 하나의 설치 프로그램으로 Claude Code, Cursor, Codex, Gemini CLI, OpenClaw, OpenCode 지원 |
 | **선택적 설치** | 전체 모음, 하나의 카테고리 또는 지정한 Skill만 설치 가능 |
 | **프로젝트 격리** | 전역 설치 또는 현재 프로젝트 내부 설치 선택 가능 |
@@ -147,7 +147,7 @@ bash install.sh --help
 | 12 | [과학 데이터베이스](./skills/12-科学数据库/) | 22 | 화학, 유전자, 단백질, 경로, 집단 및 특허 데이터베이스 |
 | 13 | [실험실 자동화 및 통합](./skills/13-实验室自动化与集成/) | 9 | ELN, 클라우드 랩, 로봇공학, 영상 및 워크플로 플랫폼 |
 | 14 | [문서 처리 및 데이터 도구](./skills/14-文档处理与数据工具/) | 7 | PDF, Word, PowerPoint, 스프레드시트, Notebook 및 형식 변환 |
-| 15 | [금융 및 경제 데이터](./skills/15-金融与经济数据/) | 6 | 시장, 공시 자료, 재정 데이터, 경제 시계열 및 조사 보고서 |
+| 15 | [금융 및 경제 데이터](./skills/15-金融与经济数据/) | 7 | 시장, 공시 자료, 재정 데이터, 경제 시계열 및 조사 보고서 |
 | 16 | [지리공간 분석 및 원격탐사](./skills/16-地理空间与遥感/) | 2 | GIS, 위성 영상, 공간 분석 및 원격탐사 |
 | 17 | [플랫폼 및 인프라](./skills/17-平台与基础设施/) | 3 | 리소스 탐색, 클라우드 컴퓨팅 및 ISO 13485 준비 |
 

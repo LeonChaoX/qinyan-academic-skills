@@ -1,16 +1,16 @@
 # Qinyan Academic Skills — Nature スタイル科学論文ワークフロー
 
-_学術研究向けのインストール可能な 187 AI Agent Skills。Nature スタイルの科学論文執筆、推敲、投稿前レビュー、図表、統計解析に対応する独自スイートを収録。_
+_学術研究向けのインストール可能な 188 AI Agent Skills。Nature スタイルの科学論文執筆、推敲、投稿前レビュー、図表、統計解析に対応する独自スイートを収録。_
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · [繁體中文](./README.zh-TW.md) · **日本語** · [한국어](./README.ko-KR.md)
 
-[![Skills](https://img.shields.io/badge/skills-187-2ea44f.svg)](#-スキルカタログ)
+[![Skills](https://img.shields.io/badge/skills-188-2ea44f.svg)](#-スキルカタログ)
 [![Nature skills: 5 workflows](https://img.shields.io/badge/Nature%20skills-5%20workflows-1f6feb.svg)](./NATURE-SKILLS.md)
 [![Categories](https://img.shields.io/badge/categories-18-0969da.svg)](#-スキルカタログ)
 [![Agent support](https://img.shields.io/badge/agents-6-8250df.svg)](#-対応エージェント)
 [![License: MIT](https://img.shields.io/badge/license-MIT-f5c518.svg)](./LICENSE)
 
-Qinyan Academic Skills は、Claude Code、Codex、Cursor、Gemini CLI、OpenClaw、OpenCode に再利用可能な研究能力を提供します。本リポジトリには **18 分野・187 Skills** を収録し、その中核として Nature スタイルの科学論文執筆、学術推敲、投稿前レビュー、科学可視化、統計報告を担う 5 Skills を提供します。
+Qinyan Academic Skills は、Claude Code、Codex、Cursor、Gemini CLI、OpenClaw、OpenCode に再利用可能な研究能力を提供します。本リポジトリには **18 分野・188 Skills** を収録し、その中核として Nature スタイルの科学論文執筆、学術推敲、投稿前レビュー、科学可視化、統計報告を担う 5 Skills を提供します。
 
 コレクション全体のほか、ワークフローに必要な Skill、カテゴリ、対象ツール、インストール範囲だけを選択できます。
 
@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/ma
 
 | 機能 | 内容 |
 | --- | --- |
-| **幅広い研究領域** | 文献、執筆、生命科学、AI、統計、データベース、ラボワークフローを含む 187 Skills |
+| **幅広い研究領域** | 文献、執筆、生命科学、AI、統計、データベース、ラボワークフローを含む 188 Skills |
 | **エージェント間の移植性** | Claude Code、Cursor、Codex、Gemini CLI、OpenClaw、OpenCode に同じインストーラーで対応 |
 | **選択的インストール** | 全体、カテゴリ単位、または指定した Skill のみをインストール可能 |
 | **プロジェクト分離** | グローバルまたは現在のプロジェクト内だけにインストール可能 |
@@ -147,7 +147,7 @@ bash install.sh --help
 | 12 | [科学データベース](./skills/12-科学数据库/) | 22 | 化学、遺伝子、タンパク質、パスウェイ、集団、特許 |
 | 13 | [ラボ自動化と統合](./skills/13-实验室自动化与集成/) | 9 | ELN、クラウドラボ、ロボティクス、画像、ワークフロープラットフォーム |
 | 14 | [文書処理とデータツール](./skills/14-文档处理与数据工具/) | 7 | PDF、Word、PowerPoint、表計算、Notebook、形式変換 |
-| 15 | [金融・経済データ](./skills/15-金融与经济数据/) | 6 | 市場、開示資料、財政データ、経済時系列、調査レポート |
+| 15 | [金融・経済データ](./skills/15-金融与经济数据/) | 7 | 市場、開示資料、財政データ、経済時系列、調査レポート |
 | 16 | [地理空間解析とリモートセンシング](./skills/16-地理空间与遥感/) | 2 | GIS、衛星画像、空間解析、リモートセンシング |
 | 17 | [プラットフォームとインフラ](./skills/17-平台与基础设施/) | 3 | リソース検出、クラウド計算、ISO 13485 対応準備 |
 

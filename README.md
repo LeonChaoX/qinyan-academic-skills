@@ -1,16 +1,16 @@
 # Qinyan Academic Skills — Nature-style scientific writing workflows
 
-_187 installable AI agent skills for academic research, featuring a first-party Nature-style suite for scientific writing, manuscript polishing, peer review, publication figures, and statistics._
+_188 installable AI agent skills for academic research, featuring a first-party Nature-style suite for scientific writing, manuscript polishing, peer review, publication figures, and statistics._
 
 **English** · [简体中文](./README.zh-CN.md) · [繁體中文](./README.zh-TW.md) · [日本語](./README.ja-JP.md) · [한국어](./README.ko-KR.md)
 
-[![Skills](https://img.shields.io/badge/skills-187-2ea44f.svg)](#-skill-catalog)
+[![Skills](https://img.shields.io/badge/skills-188-2ea44f.svg)](#-skill-catalog)
 [![Nature skills: 5 workflows](https://img.shields.io/badge/Nature%20skills-5%20workflows-1f6feb.svg)](./NATURE-SKILLS.md)
 [![Categories](https://img.shields.io/badge/categories-18-0969da.svg)](#-skill-catalog)
 [![Agent support](https://img.shields.io/badge/agents-6-8250df.svg)](#-supported-agents)
 [![License: MIT](https://img.shields.io/badge/license-MIT-f5c518.svg)](./LICENSE)
 
-Qinyan Academic Skills equips Claude Code, Codex, Cursor, Gemini CLI, OpenClaw, and OpenCode with reusable research capabilities. The repository contains **187 skills across 18 domains**, including a five-skill workflow for Nature-style scientific writing, academic editing, pre-submission review, scientific visualization, and statistical reporting.
+Qinyan Academic Skills equips Claude Code, Codex, Cursor, Gemini CLI, OpenClaw, and OpenCode with reusable research capabilities. The repository contains **188 skills across 18 domains**, including a five-skill workflow for Nature-style scientific writing, academic editing, pre-submission review, scientific visualization, and statistical reporting.
 
 Use the complete collection or install only the skill, category, tool, and scope that your workflow needs.
 
@@ -46,7 +46,7 @@ Or [explore the complete Nature skills workflow](./NATURE-SKILLS.md), including 
 
 | Capability | What you get |
 | --- | --- |
-| **Research coverage** | 187 skills spanning literature, writing, life sciences, AI, statistics, databases, and laboratory workflows |
+| **Research coverage** | 188 skills spanning literature, writing, life sciences, AI, statistics, databases, and laboratory workflows |
 | **Agent portability** | One installer for Claude Code, Cursor, Codex, Gemini CLI, OpenClaw, and OpenCode |
 | **Selective installation** | Install the full library, one category, or one named skill |
 | **Project isolation** | Choose global installation or keep skills inside a single project |
@@ -147,7 +147,7 @@ Each category links directly to its source directory. Use `--list-skills` for th
 | 12 | [Scientific databases](./skills/12-科学数据库/) | 22 | Chemistry, genes, proteins, pathways, populations, and patents |
 | 13 | [Laboratory automation and integrations](./skills/13-实验室自动化与集成/) | 9 | ELNs, cloud labs, robotics, imaging, and workflow platforms |
 | 14 | [Documents and data tools](./skills/14-文档处理与数据工具/) | 7 | PDF, Word, PowerPoint, spreadsheets, notebooks, and conversion |
-| 15 | [Finance and economic data](./skills/15-金融与经济数据/) | 6 | Markets, filings, fiscal data, economic series, and research reports |
+| 15 | [Finance and economic data](./skills/15-金融与经济数据/) | 7 | Markets, filings, fiscal data, economic series, and research reports |
 | 16 | [Geospatial analysis and remote sensing](./skills/16-地理空间与遥感/) | 2 | GIS, satellite imagery, spatial analysis, and remote sensing |
 | 17 | [Platforms and infrastructure](./skills/17-平台与基础设施/) | 3 | Resource discovery, cloud compute, and ISO 13485 readiness |
 

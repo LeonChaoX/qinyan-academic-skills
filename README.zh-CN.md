@@ -1,16 +1,16 @@
 # 沁言学术科研 Skills — Nature 风格论文写作工作流
 
-_187 个可安装 AI Agent Skills，重点提供 Nature 风格科学写作、论文润色、投稿前评审、科研绘图与统计分析工作流。_
+_188 个可安装 AI Agent Skills，重点提供 Nature 风格科学写作、论文润色、投稿前评审、科研绘图与统计分析工作流。_
 
 [English](./README.md) · **简体中文** · [繁體中文](./README.zh-TW.md) · [日本語](./README.ja-JP.md) · [한국어](./README.ko-KR.md)
 
-[![Skills](https://img.shields.io/badge/skills-187-2ea44f.svg)](#-skills-分类)
+[![Skills](https://img.shields.io/badge/skills-188-2ea44f.svg)](#-skills-分类)
 [![Nature skills: 5 workflows](https://img.shields.io/badge/Nature%20skills-5%20workflows-1f6feb.svg)](./NATURE-SKILLS.md)
 [![Categories](https://img.shields.io/badge/categories-18-0969da.svg)](#-skills-分类)
 [![Agent support](https://img.shields.io/badge/agents-6-8250df.svg)](#-支持的-agent)
 [![License: MIT](https://img.shields.io/badge/license-MIT-f5c518.svg)](./LICENSE)
 
-沁言学术科研 Skills 为 Claude Code、Codex、Cursor、Gemini CLI、OpenClaw 和 OpenCode 提供可复用的科研能力。仓库收录 **18 个领域的 187 个 Skills**，其中包含一套由五个 Skills 组成的 Nature 风格科学写作、学术润色、投稿前评审、科学可视化与统计报告工作流。
+沁言学术科研 Skills 为 Claude Code、Codex、Cursor、Gemini CLI、OpenClaw 和 OpenCode 提供可复用的科研能力。仓库收录 **18 个领域的 188 个 Skills**，其中包含一套由五个 Skills 组成的 Nature 风格科学写作、学术润色、投稿前评审、科学可视化与统计报告工作流。
 
 你可以安装完整集合，也可以只安装当前工作流所需的单个 Skill、分类、目标工具与作用域。
 
@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/ma
 
 | 能力 | 说明 |
 | --- | --- |
-| **广泛科研覆盖** | 187 个 Skills，覆盖文献、写作、生命科学、AI、统计、数据库和实验室工作流 |
+| **广泛科研覆盖** | 188 个 Skills，覆盖文献、写作、生命科学、AI、统计、数据库和实验室工作流 |
 | **跨 Agent 使用** | 同一安装器支持 Claude Code、Cursor、Codex、Gemini CLI、OpenClaw 和 OpenCode |
 | **按需安装** | 可安装完整集合、单个分类或指定 Skill |
 | **项目级隔离** | 可选择全局安装，也可仅安装到当前项目 |
@@ -147,7 +147,7 @@ bash install.sh --help
 | 12 | [科学数据库](./skills/12-科学数据库/) | 22 | 化学、基因、蛋白质、通路、群体和专利数据库 |
 | 13 | [实验室自动化与集成](./skills/13-实验室自动化与集成/) | 9 | ELN、云实验室、机器人、影像和工作流平台 |
 | 14 | [文档处理与数据工具](./skills/14-文档处理与数据工具/) | 7 | PDF、Word、PowerPoint、表格、Notebook 和格式转换 |
-| 15 | [金融与经济数据](./skills/15-金融与经济数据/) | 6 | 市场、监管文件、财政数据、经济序列和研究报告 |
+| 15 | [金融与经济数据](./skills/15-金融与经济数据/) | 7 | 市场、监管文件、财政数据、经济序列和研究报告 |
 | 16 | [地理空间与遥感](./skills/16-地理空间与遥感/) | 2 | GIS、卫星影像、空间分析和遥感 |
 | 17 | [平台与基础设施](./skills/17-平台与基础设施/) | 3 | 资源检测、云计算和 ISO 13485 准备 |
 

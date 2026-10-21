@@ -1,16 +1,16 @@
 # 沁言學術科研 Skills — Nature 風格論文寫作工作流程
 
-_187 個可安裝 AI Agent Skills，重點提供 Nature 風格科學寫作、論文潤飾、投稿前評閱、科研繪圖與統計分析工作流程。_
+_188 個可安裝 AI Agent Skills，重點提供 Nature 風格科學寫作、論文潤飾、投稿前評閱、科研繪圖與統計分析工作流程。_
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **繁體中文** · [日本語](./README.ja-JP.md) · [한국어](./README.ko-KR.md)
 
-[![Skills](https://img.shields.io/badge/skills-187-2ea44f.svg)](#-skills-分類)
+[![Skills](https://img.shields.io/badge/skills-188-2ea44f.svg)](#-skills-分類)
 [![Nature skills: 5 workflows](https://img.shields.io/badge/Nature%20skills-5%20workflows-1f6feb.svg)](./NATURE-SKILLS.md)
 [![Categories](https://img.shields.io/badge/categories-18-0969da.svg)](#-skills-分類)
 [![Agent support](https://img.shields.io/badge/agents-6-8250df.svg)](#-支援的-agent)
 [![License: MIT](https://img.shields.io/badge/license-MIT-f5c518.svg)](./LICENSE)
 
-沁言學術科研 Skills 為 Claude Code、Codex、Cursor、Gemini CLI、OpenClaw 與 OpenCode 提供可重複使用的研究能力。本儲存庫收錄 **18 個領域的 187 個 Skills**，其中包含一套由五個 Skills 組成的 Nature 風格科學寫作、學術潤飾、投稿前評閱、科學視覺化與統計報告工作流程。
+沁言學術科研 Skills 為 Claude Code、Codex、Cursor、Gemini CLI、OpenClaw 與 OpenCode 提供可重複使用的研究能力。本儲存庫收錄 **18 個領域的 188 個 Skills**，其中包含一套由五個 Skills 組成的 Nature 風格科學寫作、學術潤飾、投稿前評閱、科學視覺化與統計報告工作流程。
 
 你可以安裝完整集合，也可以只安裝目前工作流程所需的單一 Skill、分類、目標工具與作用域。
 
@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/LeonChaoX/qinyan-academic-skills/ma
 
 | 能力 | 說明 |
 | --- | --- |
-| **廣泛研究覆蓋** | 187 個 Skills，涵蓋文獻、寫作、生命科學、AI、統計、資料庫與實驗室工作流程 |
+| **廣泛研究覆蓋** | 188 個 Skills，涵蓋文獻、寫作、生命科學、AI、統計、資料庫與實驗室工作流程 |
 | **跨 Agent 使用** | 同一安裝器支援 Claude Code、Cursor、Codex、Gemini CLI、OpenClaw 與 OpenCode |
 | **按需安裝** | 可安裝完整集合、單一分類或指定 Skill |
 | **專案級隔離** | 可選擇全域安裝，也可僅安裝至目前專案 |
@@ -147,7 +147,7 @@ bash install.sh --help
 | 12 | [科學資料庫](./skills/12-科学数据库/) | 22 | 化學、基因、蛋白質、路徑、族群與專利資料庫 |
 | 13 | [實驗室自動化與整合](./skills/13-实验室自动化与集成/) | 9 | ELN、雲端實驗室、機器人、影像與工作流程平台 |
 | 14 | [文件處理與資料工具](./skills/14-文档处理与数据工具/) | 7 | PDF、Word、PowerPoint、試算表、Notebook 與格式轉換 |
-| 15 | [金融與經濟資料](./skills/15-金融与经济数据/) | 6 | 市場、監管文件、財政資料、經濟時間序列與研究報告 |
+| 15 | [金融與經濟資料](./skills/15-金融与经济数据/) | 7 | 市場、監管文件、財政資料、經濟時間序列與研究報告 |
 | 16 | [地理空間與遙測](./skills/16-地理空间与遥感/) | 2 | GIS、衛星影像、空間分析與遙測 |
 | 17 | [平台與基礎設施](./skills/17-平台与基础设施/) | 3 | 資源偵測、雲端運算與 ISO 13485 準備 |
 
